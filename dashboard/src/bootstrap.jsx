@@ -10,10 +10,10 @@ const root = createRoot(RootElement)
 
 root.render(
   <StrictMode>
-    <ThemeProvider>
-      <BrowserRouter basename="/menu-1">
-          <App/>
-      </BrowserRouter>
-    </ThemeProvider>   
+    <BrowserRouter basename="/menu-1">
+      <ThemeProvider>
+        <App/>
+      </ThemeProvider>   
+    </BrowserRouter>
   </StrictMode>
 )

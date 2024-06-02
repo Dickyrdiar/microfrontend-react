@@ -15,7 +15,7 @@ const AuthController = () => {
 
       if (Email && password) {
         localStorage.setItem("password", JSON.stringify(password))
-        navigate("/menu-1")
+        navigate("dashboard")
       } else {
         setDisabled(true)
       }
