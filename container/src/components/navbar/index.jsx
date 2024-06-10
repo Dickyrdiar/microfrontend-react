@@ -61,6 +61,7 @@ const Navigation = () => {
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-gray-900"
+          onClick={() => window.location.assign('/')}
         >
           Microfrontend
         </Typography>
