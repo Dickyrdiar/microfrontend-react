@@ -18,6 +18,7 @@ const Auth = () => {
       <div className="w-full bg-white md:p-10 p-4 flex flex-col justify-between">
         <div className="flex justify-center items-center md:min-h-[700px] min-h-[500px]">
           <Card className="w-96 max-w-full md:min-w-sm shadow-none md:shadow-md md:border-t-2 md:border-gray-100 rounded-xl md:p-4xl p-xs mt-14">
+
             <div className="p-6">
               <Typography
                 type="h2"
@@ -27,8 +28,8 @@ const Auth = () => {
               </Typography>
 
               <Typography
-                  type="small"
-                  className="text-sm font-normal text-neutral-500 mb-4xl mt-4"
+                type="small"
+                className="text-sm font-normal text-neutral-500 mb-4xl mt-4"
               >
                 Please access your account
               </Typography>
@@ -40,12 +41,12 @@ const Auth = () => {
             </div>
 
             <div className="mb-sm p-6">
-              <label
-                htmlFor="password"
-                className="text-sm font-medium text-neutral-900"
+             <Typography
+                type="small"
+                className="text-sm font-normal text-neutral-500 mb-4xl mt-4"
               >
                 Kata Sandi
-              </label>
+              </Typography>
 
               <Input 
                 type="password"

@@ -14,9 +14,9 @@ const Dashboard = () => {
           this is a dashboard
         </Typography>
 
-        <Button onClick={() => window.location.assign('menu-1')}>
+        {/* <Button onClick={() => window.location.assign('menu-1')}>
           go to Menu-1
-        </Button>
+        </Button> */}
       </div>
     </>
   )

@@ -41,7 +41,7 @@ const EmailInput = ({ email, setEmail }) => {
   return (
     <div className="mt-4xl">
       {/* Input form login menggunakan email */}
-      <div className="mb-md">
+      <div className="mb-md p-4">
         <label htmlFor="email" className="text-sm font-medium text-neutral-900">
           Email
         </label>
@@ -49,7 +49,7 @@ const EmailInput = ({ email, setEmail }) => {
       <Input 
          id="email"
          placeholder="Masukkan email"
-         className={`${(!isEmailValid || isEmailEmpty) && "border-red-500"}`}
+         className={`${(!isEmailValid || isEmailEmpty) && "border-red-500 p-4"}`}
          size="medium"
          value={email}
          onChange={handleEmailChange}
