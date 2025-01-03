@@ -2,7 +2,6 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./containers/login";
 import SpinnerLoading from "./components/spinner";
-import Dashboard from "./containers/dashboard";
 import Wrapper from "./molecules/global/wrapper";
 
 // Assuming 'dashboard' is a remote module or application in Module Federation

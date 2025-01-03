@@ -33,7 +33,14 @@ const Menu = [
     label: "Menu 1",
     link: "/menu-1",
     icon: <PresentationChartBarIcon className="h-5 w-5" />
-  }
+  },
+
+    {
+      id: 2,
+      label: "Menu 2",
+      // link: "/menu-1",
+      icon: <ShoppingBagIcon className="h-5 w-5" />
+    }, 
 ]
  
 export function SidebarMenu() {
@@ -44,7 +51,7 @@ export function SidebarMenu() {
 
  
   return (
-    <Card className="h-full w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+    <Card className="h-full w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900">
       <div className="mb-2 p-4">
         <Typography variant="h5" color="blue-gray">
           MF-Application
@@ -72,7 +79,7 @@ export function SidebarMenu() {
           </Accordion>
         ))}
       </List>
-      <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
+      {/* <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
         <CubeTransparentIcon className="mb-4 h-12 w-12" />
         <Typography variant="h6" className="mb-1">
           Upgrade to PRO
@@ -95,7 +102,7 @@ export function SidebarMenu() {
             Upgrade Now
           </Typography>
         </div>
-      </Alert>
+      </Alert> */}
     </Card>
   );
 }

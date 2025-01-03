@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
+
 module.exports = (_, argv) => ({
   output: {
     publicPath: "http://localhost:3001/",
@@ -48,7 +51,6 @@ module.exports = (_, argv) => ({
       },
       exposes: {},
       shared: {
-        ...deps,
         react: {
           singleton: true,
           requiredVersion: deps.react,
@@ -56,6 +58,18 @@ module.exports = (_, argv) => ({
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
+        },
+        "react-router-dom": {
+          singleton: true,
+          requiredVersion: deps["react-router-dom"],
+        },
+        "@material-tailwind/react": {
+          singleton: true,
+          requiredVersion: deps["@material-tailwind/react"],
+        },
+        "@heroicons/react": {
+          singleton: true,
+          requiredVersion: deps["@heroicons/react"],
         },
       },
     }),
