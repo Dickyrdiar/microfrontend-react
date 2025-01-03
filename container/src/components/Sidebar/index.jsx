@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   Card,
@@ -33,7 +34,14 @@ const Menu = [
     label: "Menu 1",
     link: "/menu-1",
     icon: <PresentationChartBarIcon className="h-5 w-5" />
-  }
+  }, 
+
+  {
+    id: 2,
+    label: "Menu 2",
+    link: "/menu-1",
+    icon: <ShoppingBagIcon className="h-5 w-5" />
+  }, 
 ]
  
 export function SidebarMenu() {
@@ -72,7 +80,7 @@ export function SidebarMenu() {
           </Accordion>
         ))}
       </List>
-      <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
+      {/* <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
         <CubeTransparentIcon className="mb-4 h-12 w-12" />
         <Typography variant="h6" className="mb-1">
           Upgrade to PRO
@@ -95,7 +103,7 @@ export function SidebarMenu() {
             Upgrade Now
           </Typography>
         </div>
-      </Alert>
+      </Alert> */}
     </Card>
   );
 }

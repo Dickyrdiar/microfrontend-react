@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import Navigation from "../../components/navbar"
 import Sidebar, { DefaultSidebar, SidebarMenu } from "../../components/Sidebar"
 import Dashboard from "../../containers/dashboard"
