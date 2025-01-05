@@ -70,7 +70,7 @@ export function SidebarMenu() {
                 />
             }
           >
-            <ListItem className="p-0" selected={open === item.id} onClick={() => navigate(item.link) }>
+            <ListItem className="p-2" selected={open === item.id} onClick={() => navigate(item.link) }>
               <ListItemPrefix>{item.icon}</ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 {item.label}
@@ -79,30 +79,6 @@ export function SidebarMenu() {
           </Accordion>
         ))}
       </List>
-      {/* <Alert open={openAlert} className="mt-auto" onClose={() => setOpenAlert(false)}>
-        <CubeTransparentIcon className="mb-4 h-12 w-12" />
-        <Typography variant="h6" className="mb-1">
-          Upgrade to PRO
-        </Typography>
-        <Typography variant="small" className="font-normal opacity-80">
-          Upgrade to Material Tailwind PRO and get even more components, plugins, advanced features
-          and premium.
-        </Typography>
-        <div className="mt-4 flex gap-3">
-          <Typography
-            as="a"
-            href="#"
-            variant="small"
-            className="font-medium opacity-80"
-            onClick={() => setOpenAlert(false)}
-          >
-            Dismiss
-          </Typography>
-          <Typography as="a" href="#" variant="small" className="font-medium">
-            Upgrade Now
-          </Typography>
-        </div>
-      </Alert> */}
     </Card>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconButton, Navbar, Typography, Collapse } from "@material-tailwind/react";
+// import { IconButton, Navbar, Typography, Collapse } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Navigation = () => {
@@ -7,57 +7,31 @@ const Navigation = () => {
 
   const NavList = () => (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-gray-800"
-      >
-        <a href="#" className="flex items-center">
-          Pages
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-gray-800"
-      >
-        <a href="#" className="flex items-center">
-          Account
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-gray-800"
-      >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal text-gray-800"
-      >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
-      </Typography>
+      {["Pages", "Account", "Blocks", "Docs"].map((item) => (
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal text-gray-800"
+          key={item}
+        >
+          <a href="#" className="flex items-center">
+            {item}
+          </a>
+        </Typography>
+      ))}
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl w-full px-6 py-3">
+    <Navbar className="mx-auto max-w-screen-xl w-full px-6 py-3 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-gray-900"
+          onClick={() => window.location.assign('/')}
         >
           Microfrontend
         </Typography>
