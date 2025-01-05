@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 // import AuthController from "../controller/AuthController"
 import { Typography, Input, Card } from "@material-tailwind/react"
 import EmailInput from "../../components/emailInput"

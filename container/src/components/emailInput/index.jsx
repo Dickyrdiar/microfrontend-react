@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // EmailInput.jsx
 import React, { useState } from "react";
 import Input from "../input";
@@ -39,7 +40,7 @@ const EmailInput = ({ email, setEmail }) => {
   };
 
   return (
-    <div className="mt-4xl">
+    <div className="relative">
       {/* Input form login menggunakan email */}
       <div className="mb-md p-4">
         <label htmlFor="email" className="text-sm font-medium text-neutral-900">
@@ -49,7 +50,7 @@ const EmailInput = ({ email, setEmail }) => {
       <Input 
          id="email"
          placeholder="Masukkan email"
-         className={`${(!isEmailValid || isEmailEmpty) && "border-red-500 p-4"}`}
+         className={`${(!isEmailValid || isEmailEmpty) && "border-red-500 p-4"} p-4`}
          size="medium"
          value={email}
          onChange={handleEmailChange}

@@ -6,7 +6,7 @@ module.exports = (_, argv) => ({
   output: {
     // pfilename: '[name].bundle.js', // Use descriptive bundle names
     // path: path.resolve(__dirname, 'build'), // Output directory
-    publicPath: "http://localhost:3002/menu-1",
+    publicPath: "http://localhost:3002/",
   },
 
   resolve: {
