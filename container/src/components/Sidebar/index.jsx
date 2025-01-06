@@ -71,7 +71,7 @@ export function SidebarMenu() {
                 />
             }
           >
-            <ListItem className="p-2" selected={open === item.id} onClick={() => navigate(item.link) }>
+            <ListItem className="p-1" selected={open === item.id} onClick={() => navigate(item.link) }>
               <ListItemPrefix>{item.icon}</ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 {item.label}

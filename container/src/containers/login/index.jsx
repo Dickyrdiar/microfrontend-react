@@ -36,15 +36,15 @@ const Auth = () => {
               </Typography>
             </div>
 
-            <div className="mt-[-5] w-[10px] p-6">
+            <div className="mt-[5px] w-[10px] p-6">
               {/* <EmailInput email={Email} setEmail={setEmail}/> */}
               <EmailInput email={Email} setEmail={setEmail} />
             </div>
 
-            <div className="mb-sm p-6">
+            <div className="mb-sm p-6 mt-[20px]">
              <Typography
                 type="small"
-                className="text-sm font-normal text-neutral-500 mb-4xl mt-4"
+                className="text-sm font-normal text-neutral-500 mb-4xl mt-4 p-3"
               >
                 Kata Sandi
               </Typography>
