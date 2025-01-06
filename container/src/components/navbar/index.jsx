@@ -9,7 +9,20 @@ const Navigation = () => {
   const NavList = () => {
     return (
       <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-        <Typography
+        {["Pages", "Account", "Blocks", "Docs"].map((item) => (
+          <Typography
+           as="li"
+           variant="small"
+           color="blue-gray"
+           className="p-1 font-normal text-gray-800"
+           key={item}
+          >
+           <a href="#" className="flex items-center">
+             {item}
+           </a>
+         </Typography>
+        ))}
+        {/* <Typography
           as="li"
           variant="small"
           color="blue-gray"
@@ -48,13 +61,13 @@ const Navigation = () => {
           <a href="#" className="flex items-center">
             Docs
           </a>
-        </Typography>
+        </Typography> */}
       </ul>
     );
   }
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl w-full px-6 py-3 rounded-none">
+    <Navbar className="mx-auto max-w-screen-xl w-full px-6 py-3 rounded-none fixed">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"

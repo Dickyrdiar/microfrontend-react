@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   Card,
@@ -31,17 +30,17 @@ import { useNavigate } from "react-router-dom";
 const Menu = [
   {
     id: 1,
-    label: "Dashboard",
+    label: "Menu 1",
     link: "/menu-1",
     icon: <PresentationChartBarIcon className="h-5 w-5" />
-  }, 
+  },
 
-  {
-    id: 2,
-    label: "Menu 2",
-    link: "/menu-1",
-    icon: <ShoppingBagIcon className="h-5 w-5" />
-  }, 
+    {
+      id: 2,
+      label: "Menu 2",
+      // link: "/menu-1",
+      icon: <ShoppingBagIcon className="h-5 w-5" />
+    }, 
 ]
  
 export function SidebarMenu() {
@@ -52,9 +51,9 @@ export function SidebarMenu() {
 
  
   return (
-    <Card className="h-full w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+    <Card className="h-full w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900">
       <div className="mb-2 p-4">
-        <Typography variant="h5" color="blue-gray" onClick={() => window.location.assign('/')} className="cursor-pointer">
+        <Typography variant="h5" color="blue-gray">
           MF-Application
         </Typography>
       </div>
@@ -71,7 +70,7 @@ export function SidebarMenu() {
                 />
             }
           >
-            <ListItem className="p-1" selected={open === item.id} onClick={() => navigate(item.link) }>
+            <ListItem className="p-2" selected={open === item.id} onClick={() => navigate(item.link) }>
               <ListItemPrefix>{item.icon}</ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 {item.label}
