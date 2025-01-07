@@ -7,7 +7,7 @@ const MainMenu = () => {
       <Typography
         variant="h3"
       >
-        this is a menn-1
+        this is a menu-2
       </Typography>
     </div>
   )

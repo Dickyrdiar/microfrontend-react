@@ -10,7 +10,7 @@ const root = createRoot(RootElement)
 
 root.render(
   <StrictMode>
-    <BrowserRouter basename="/menu-1">
+    <BrowserRouter basename="/menu-2">
       <ThemeProvider>
         <App/>
       </ThemeProvider>   

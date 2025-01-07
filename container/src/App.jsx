@@ -6,6 +6,7 @@ import Wrapper from "./molecules/global/wrapper";
 
 // Assuming 'dashboard' is a remote module or application in Module Federation
 const RemoteDashboard = lazy(() => import('dashboard/DashboardApp'));
+const RemoteShops = lazy(() => import('shops/Shops'))
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           </Suspense>
         } />
         <Route path="/menu-1/*" element={<Suspense fallback={<SpinnerLoading />}><RemoteDashboard /></Suspense>} />
+        <Route path="/menu-2/*" element={<Suspense fallback={<SpinnerLoading />}><RemoteShops /></Suspense>} />
       </Routes>
     </BrowserRouter>
   );
