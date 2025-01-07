@@ -38,8 +38,8 @@ const Menu = [
 
   {
     id: 2,
-    label: "Menu 2",
-    link: "/menu-1",
+    label: "Shops",
+    link: "/menu-2",
     icon: <ShoppingBagIcon className="h-5 w-5" />
   }, 
 ]
@@ -52,7 +52,7 @@ export function SidebarMenu() {
 
  
   return (
-    <Card className="h-full w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+    <Card className="h-full w-full max-w-[35rem] p-4 shadow-xl shadow-blue-gray-900/5">
       <div className="mb-2 p-4">
         <Typography variant="h5" color="blue-gray" onClick={() => window.location.assign('/')} className="cursor-pointer">
           MF-Application
@@ -71,7 +71,7 @@ export function SidebarMenu() {
                 />
             }
           >
-            <ListItem className="p-1" selected={open === item.id} onClick={() => navigate(item.link) }>
+            <ListItem className="p-0" selected={open === item.id} onClick={() => navigate(item.link) }>
               <ListItemPrefix>{item.icon}</ListItemPrefix>
               <Typography color="blue-gray" className="mr-auto font-normal">
                 {item.label}
